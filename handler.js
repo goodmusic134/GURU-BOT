@@ -761,7 +761,7 @@ export async function deleteUpdate(message) {
             return 
             await this.reply(msg.chat, `
 ≡ deleted a message 
-┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
+┌─⊷  
 ▢ *Number :* @${participant.split`@`[0]} 
 └─────────────
 TO DEACTIVE , PRESS 
@@ -778,16 +778,16 @@ TO DEACTIVE , PRESS
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*ᴏɴʟʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ* • This command can only be used by the *Creator of the bot*',
-        owner: '*ᴏɴʟʏ ᴏᴡɴᴇʀ* • This command can only be used by the *Bot Owner',
-        mods: '*ᴏɴʟʏ ᴍᴏᴅᴇʀᴀᴛᴏʀ* •This function is only for *For Bot moderators*',
-        premium: '*ᴏɴʟʏ ᴘʀᴇᴍɪᴜᴍ* • This command is for *Premium members only',
-        group: '*ɢʀᴏᴜᴘ ᴄʜᴀᴛ* • This command can only be used in groups',
-        private: '*ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ* • This command can only be used in the *private chat of the Bot*',
-        admin: '*ᴏɴʟʏ ᴀᴅᴍɪɴ* • This command is only for *Group Admins*',
-        botAdmin: '*ᴏɴʟʏ ʙᴏᴛ ᴀᴅᴍɪɴ* • To use this command I must be *Admin!*',
-        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ ʏᴇᴛ* •  Sign in to use this feature Typing:\n\n*/reg name.age*\n\n📌Example : */reg GURU.20*', 
-        restrict: '*ʀᴇsᴛʀɪᴄᴛ* • This feature is *disabled*',
+        rowner: '** • This command can only be used by the *Creator of the bot*',
+        owner: '** • This command can only be used by the *Bot Owner',
+        mods: '** •This function is only for *For Bot moderators*',
+        premium: '** • This command is for *Premium members only',
+        group: '** • This command can only be used in groups',
+        private: '** • This command can only be used in the *private chat of the Bot*',
+        admin: '*=* • This command is only for *Group Admins*',
+        botAdmin: '** • To use this command I must be *Admin!*',
+        unreg: '** •  Sign in to use this feature Typing:\n\n*/reg name.age*\n\n📌Example : */reg GURU.20*', 
+        restrict: '** • This feature is *disabled*',
     }[type]
     if (msg) return m.reply(msg)
 }
